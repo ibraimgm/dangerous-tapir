@@ -8,6 +8,14 @@
       "type": "npm",
       "script": "start",
       "problemMatcher": []
-    }
+    },
+    {
+			"label": "Run ESLint",
+			"type": "npm",
+			"script": "lint",
+			"problemMatcher": [
+				"$eslint-stylish"
+			]
+		}
   ]
 }
