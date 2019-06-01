@@ -16,25 +16,42 @@ const RECEITAS = [
 const DESPESAS = 2711.9;
 
 const Faturamento = () => {
+  const iconTotal = (
+    <i>
+      <img src={ic_totais} alt="" />
+      <span className="total-money total-money--stacked d-none d-lg-block">
+        $
+      </span>
+      <span className="total-money total-money--inline d-block d-lg-none">
+        $
+      </span>
+    </i>
+  );
+
+  const items = [
+    { caption: 'Totais', icon: iconTotal, active: true },
+    { caption: 'Clientes', icon: ic_clientes }
+  ];
+
   return (
     <React.Fragment>
       <Filter
+        className="pl-4 pl-lg-5"
         items={[
           { name: 'Hoje', active: true },
           'Última semana',
           'Último mês',
-          'Outro período'
+          { name: 'Outro período', className: 'd-none d-sm-inline-block' }
         ]}
       />
+      <Menu
+        className="pl-4 pl-lg-5 d-block d-lg-none"
+        itemClass="d-inline-block menu__item--inline"
+        items={items}
+      />
       <ContentArea
-        menu={
-          <Menu
-            items={[
-              { caption: 'Totais', icon: ic_totais, active: true },
-              { caption: 'Clientes', icon: ic_clientes }
-            ]}
-          />
-        }
+        className="pl-4 pl-lg-5"
+        menu={<Menu className="d-none d-lg-block" items={items} />}
         content={<Totais receitas={RECEITAS} despesas={DESPESAS} />}
       />
     </React.Fragment>

@@ -16,15 +16,24 @@ const App = () => (
       <Menu
         main
         icon={ic_logo}
+        fillActive="#fff"
+        fillNormal="#049c7a"
+        className="d-none d-lg-block"
         items={[
           { caption: 'Meu Faturamento', icon: ic_dashboard, active: true },
-          { caption: 'Cadastro', icon: ic_cadastro }
+          {
+            caption: 'Cadastro',
+            icon: ic_cadastro
+          }
         ]}
       />
     }
     content={
       <React.Fragment>
-        <Breadcrumb items={['Petshop', 'Meu faturamento']} />
+        <Breadcrumb
+          className="pb-lg-4 pl-4 pl-lg-5"
+          items={['Petshop', 'Meu faturamento']}
+        />
         <Faturamento />
       </React.Fragment>
     }

@@ -3,9 +3,18 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 import Button from '../atoms/Button';
+import SvgFill from '../atoms/SvgFill';
 
 const Menu = props => {
-  const { items, main, icon, className } = props;
+  const {
+    items,
+    main,
+    icon,
+    className,
+    itemClass,
+    fillActive,
+    fillNormal
+  } = props;
 
   const css = classNames(
     'menu',
@@ -14,6 +23,12 @@ const Menu = props => {
     className
   );
   const cssBtn = classNames('menu__button', { 'menu__button--main': main });
+  const cssItem = classNames(
+    'menu__item',
+    { 'menu__item--main': main },
+    { 'menu__item--inner': !main },
+    itemClass
+  );
 
   return (
     <nav className={css}>
@@ -25,6 +40,19 @@ const Menu = props => {
         )}
         {items
           .map(it => (typeof it === 'string' ? { caption: it } : it))
+          .map(it => {
+            if (!it.icon || typeof it.icon !== 'string') {
+              return it;
+            }
+
+            if (it.active && fillActive) {
+              it.icon = <SvgFill path={it.icon} fill={fillActive} />;
+            } else if (!it.active && fillNormal) {
+              it.icon = <SvgFill path={it.icon} fill={fillNormal} />;
+            }
+
+            return it;
+          })
           .map((it, i) => {
             const { active, className } = it;
             const css = classNames(
@@ -34,7 +62,7 @@ const Menu = props => {
             );
 
             return (
-              <li key={i}>
+              <li key={i} className={cssItem}>
                 <Button {...it} className={css} />
               </li>
             );
@@ -57,11 +85,14 @@ Menu.propTypes = {
       PropTypes.string,
       PropTypes.shape({
         caption: PropTypes.string,
-        icon: PropTypes.string,
+        icon: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
         active: PropTypes.bool
       })
     ])
-  ).isRequired
+  ).isRequired,
+  itemClass: PropTypes.string,
+  fillActive: PropTypes.string,
+  fillNormal: PropTypes.string
 };
 
 export default Menu;

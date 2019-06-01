@@ -48,7 +48,7 @@ const Totais = props => {
         </div>
       </div>
       <div className="row">
-        <div className="col graph">
+        <div className="col col-xl-6 graph">
           <span className="title">Serviços</span>
           <div className="graph__container graph__container--circle">
             <GraphServicos data={servicosData} />
@@ -60,7 +60,7 @@ const Totais = props => {
             value={`${moneyFormat(totalReceitas)} (100%)`}
           />
         </div>
-        <div className="col graph">
+        <div className="col col-xl-6 graph">
           <span className="title">Despesas x Receitas</span>
           <div className="graph__container graph__container--bar">
             <GraphReceitasDespesas

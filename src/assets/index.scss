@@ -34,15 +34,30 @@
   }
 }
 
-.menu {
-  min-height: 100vh;
+.total-money {
+  color: #fff;
+  font-style: normal;
+  font-family: 'Avenir';
+  position: absolute;
 
+  &--stacked {
+    left: 4.6em;
+    top: 11.6em;
+  }
+
+  &--inline {
+    left: 2.9em;
+    top: 11.5em;
+  }
+}
+
+.menu {
   &--inner {
     min-width: 10rem;
-    padding-left: 1rem;
   }
 
   &--main {
+    min-height: 100vh;
     background-color: #09cfa3;
   }
 
@@ -50,6 +65,14 @@
     > img {
       display: block;
       margin: 1rem auto 0 auto;
+    }
+  }
+
+  &__item {
+    &--inline {
+      & + & {
+        margin-left: 2rem;
+      }
     }
   }
 
@@ -105,6 +128,7 @@
     font-weight: bold;
     color: #737689;
     text-transform: uppercase;
+    padding-left: 0;
   }
 
   &__nav {
@@ -113,7 +137,8 @@
   }
 
   &__list {
-    padding-left: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
 
   &__item {
@@ -125,11 +150,18 @@
       content: '';
     }
   }
+
+  &__icon {
+    position: relative;
+    top: -0.25rem;
+
+    > button {
+      background-color: transparent;
+    }
+  }
 }
 
 .filter {
-  padding: 1rem;
-
   &__item {
     display: inline-block;
   }

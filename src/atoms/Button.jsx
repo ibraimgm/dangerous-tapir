@@ -10,7 +10,7 @@ const Button = props => {
 
   return (
     <button type="button" className={css} {...otherProps}>
-      {icon && <img src={icon} alt="" />}
+      {icon && (typeof icon === 'string' ? <img src={icon} alt="" /> : icon)}
       {caption && <span>{caption}</span>}
     </button>
   );
@@ -18,7 +18,7 @@ const Button = props => {
 
 Button.propTypes = {
   caption: PropTypes.string,
-  icon: PropTypes.string
+  icon: PropTypes.oneOfType([PropTypes.string, PropTypes.node])
 };
 
 export default Button;
