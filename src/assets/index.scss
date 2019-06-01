@@ -154,3 +154,34 @@
     }
   }
 }
+
+.title {
+  font-family: 'DIN';
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #737689;
+  display: block;
+}
+
+.spotlight {
+  font-family: 'Avenir';
+  font-size: 70px;
+  text-align: center;
+  color: #09d0a3;
+  border-bottom: 1px solid #dfe1e0;
+
+  .title {
+    position: relative;
+    top: 0.4em;
+  }
+
+  &__currency {
+    font-size: 0.5em;
+    vertical-align: top;
+  }
+
+  &__amount {
+    position: relative;
+    top: -0.2em;
+  }
+}
