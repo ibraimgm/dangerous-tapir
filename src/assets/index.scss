@@ -96,26 +96,34 @@
   }
 }
 
-.bc-nav,
-.bc-list {
-  background-color: transparent;
-  font-family: 'Avenir';
-  font-size: 13px;
-  font-weight: bold;
-  color: #737689;
-  text-transform: uppercase;
-}
+.bc {
+  &__nav,
+  &__list {
+    background-color: transparent;
+    font-family: 'Avenir';
+    font-size: 13px;
+    font-weight: bold;
+    color: #737689;
+    text-transform: uppercase;
+  }
 
-.bc-nav {
-  border-bottom: 1px solid #dfe1e0;
-  border-radius: 0;
-}
+  &__nav {
+    border-bottom: 1px solid #dfe1e0;
+    border-radius: 0;
+  }
 
-.bc-item {
-  margin-right: 1rem;
+  &__list {
+    padding-left: 0;
+  }
 
-  & + &::before {
-    content: '';
+  &__item {
+    & + & {
+      margin-left: 1rem;
+    }
+
+    & + &::before {
+      content: '';
+    }
   }
 }
 

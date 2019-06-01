@@ -5,13 +5,13 @@ const Breadcrumb = props => {
   const { items } = props;
 
   return (
-    <nav className="breadcrumb bc-nav">
-      <ol className="breadcrumb bc-list">
+    <nav className="breadcrumb bc__nav">
+      <ol className="breadcrumb bc__list">
         {items
           .join('_|_')
           .split('_')
           .map((item, i) => (
-            <li key={i} className="breadcrumb-item bc-item">
+            <li key={i} className="breadcrumb-item bc__item">
               {item}
             </li>
           ))}
