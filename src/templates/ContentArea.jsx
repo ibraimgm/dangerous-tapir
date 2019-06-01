@@ -1,19 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import classNames from 'classnames';
 
 const ContentArea = props => {
-  const { menu, header, content } = props;
+  const { menu, content, fluid } = props;
+
+  const css = classNames({ container: !fluid }, { 'container-fluid': fluid });
 
   return (
-    <div className="container">
-      {header && (
+    <div className="content-area">
+      {menu}
+      <div className={css}>
         <div className="row">
-          <div className="col">{header}</div>
+          <div className="col content-area__content">{content}</div>
         </div>
-      )}
-      <div className="row">
-        <div className="col">{menu}</div>
-        <div className="col">{content}</div>
       </div>
     </div>
   );
@@ -21,8 +21,8 @@ const ContentArea = props => {
 
 ContentArea.propTypes = {
   menu: PropTypes.node,
-  header: PropTypes.node,
-  content: PropTypes.node.isRequired
+  content: PropTypes.node.isRequired,
+  fluid: PropTypes.bool
 };
 
 export default ContentArea;

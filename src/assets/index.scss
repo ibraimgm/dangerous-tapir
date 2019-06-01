@@ -1,0 +1,98 @@
+@font-face {
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir'), url(./fonts/Avenir.ttc);
+}
+
+@font-face {
+  font-family: 'DIN';
+  font-style: normal;
+  font-stretch: condensed;
+  font-weight: bold;
+  src: local('DIN Condensed Bold'), url(./fonts/DIN-Condensed-Bold.ttf);
+}
+
+.content-area {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+
+  &__content {
+    width: 100%;
+    background-color: #f5f7fa;
+    padding-left: 0;
+  }
+}
+
+.button {
+  border: 0;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.menu {
+  min-height: 100vh;
+
+  &--inner {
+    min-width: 10rem;
+    padding-left: 1rem;
+  }
+
+  &--main {
+    background-color: #09cfa3;
+  }
+
+  &__icon {
+    > img {
+      display: block;
+      margin: 1rem auto 0 auto;
+    }
+  }
+
+  &__button {
+    width: 100%;
+    background: transparent;
+    font-family: 'Avenir';
+    font-weight: bold;
+    font-size: 14px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #737689;
+    opacity: 0.5;
+    padding-left: 1rem;
+    margin-top: 1.5rem;
+
+    &--active {
+      color: #737689;
+      opacity: 1;
+    }
+
+    > span {
+      padding-left: 0.5rem;
+    }
+
+    &--main {
+      color: #049c7a;
+      margin-top: 2.5rem;
+      font-weight: normal;
+      font-size: 12px;
+      text-align: center;
+      text-transform: capitalize;
+      opacity: 1;
+      padding-left: unset;
+
+      > span {
+        padding-left: unset;
+        margin-top: 0.2rem;
+        display: block;
+      }
+    }
+
+    &--main#{&}--active {
+      color: #fff;
+    }
+  }
+}
