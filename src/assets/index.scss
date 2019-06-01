@@ -1,19 +1,5 @@
-@font-face {
-  font-family: 'Avenir';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Avenir'), url(./fonts/Avenir.ttc);
-}
-
-@font-face {
-  font-family: 'DIN';
-  font-style: normal;
-  font-stretch: condensed;
-  font-weight: bold;
-  src: local('DIN Condensed Bold'), url(./fonts/DIN-Condensed-Bold.ttf);
-}
-
 .content-area {
+  background: #f5f7fa;
   display: flex;
   width: 100%;
   align-items: stretch;
@@ -37,7 +23,7 @@
 .total-money {
   color: #fff;
   font-style: normal;
-  font-family: 'Avenir';
+  font-family: 'Avenir Heavy';
   position: absolute;
 
   &--stacked {
@@ -79,7 +65,7 @@
   &__button {
     width: 100%;
     background: transparent;
-    font-family: 'Avenir';
+    font-family: 'Avenir Heavy';
     font-weight: bold;
     font-size: 14px;
     text-align: left;
@@ -98,6 +84,7 @@
     }
 
     &--main {
+      font-family: 'Avenir Medium';
       color: #049c7a;
       margin-top: 2.5rem;
       font-weight: normal;
@@ -123,7 +110,7 @@
   &__nav,
   &__list {
     background-color: transparent;
-    font-family: 'Avenir';
+    font-family: 'Avenir Heavy';
     font-size: 13px;
     font-weight: bold;
     color: #737689;
@@ -171,7 +158,7 @@
   }
 
   &__button {
-    font-family: 'DIN';
+    font-family: 'DIN Condensed Bold';
     font-size: 16px;
     text-transform: uppercase;
     color: #fff;
@@ -188,7 +175,7 @@
 }
 
 .title {
-  font-family: 'DIN';
+  font-family: 'DIN Condensed Bold';
   font-size: 25px;
   text-transform: uppercase;
   color: #737689;
@@ -196,7 +183,7 @@
 }
 
 .spotlight {
-  font-family: 'Avenir';
+  font-family: 'Avenir Medium';
   font-size: 70px;
   text-align: center;
   color: #09d0a3;
@@ -242,7 +229,7 @@
 
     &--total {
       .graph__label {
-        font-family: 'Avenir';
+        font-family: 'Avenir Black';
         font-size: 12px;
         font-weight: bold;
         text-transform: uppercase;
@@ -252,14 +239,14 @@
   }
 
   &__label {
-    font-family: 'Avenir';
+    font-family: 'Avenir Roman';
     font-size: 10px;
     color: #4a4a4a;
     margin-left: 0.5rem;
   }
 
   &__value {
-    font-family: 'Avenir';
+    font-family: 'Avenir Black';
     font-size: 12px;
     font-weight: bold;
     color: #4a4a4a;
