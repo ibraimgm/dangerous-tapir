@@ -185,3 +185,52 @@
     top: -0.2em;
   }
 }
+
+.graph {
+  padding-left: 5em;
+  padding-right: 5em;
+
+  .title {
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &__container {
+    &--circle {
+      position: relative;
+      width: 70%;
+      left: 15%;
+    }
+  }
+
+  &__subtitle {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    &--total {
+      .graph__label {
+        font-family: 'Avenir';
+        font-size: 12px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #4a4a4a;
+      }
+    }
+  }
+
+  &__label {
+    font-family: 'Avenir';
+    font-size: 10px;
+    color: #4a4a4a;
+    margin-left: 0.5rem;
+  }
+
+  &__value {
+    font-family: 'Avenir';
+    font-size: 12px;
+    font-weight: bold;
+    color: #4a4a4a;
+    text-align: right;
+  }
+}

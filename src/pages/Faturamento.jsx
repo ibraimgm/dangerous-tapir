@@ -7,6 +7,14 @@ import ContentArea from '../templates/ContentArea';
 import ic_totais from '../assets/ico/ic_totais.svg';
 import ic_clientes from '../assets/ico/ic_clientes.svg';
 
+const RECEITAS = [
+  { categoria: 'Banho & tosa', valor: 6445.25 },
+  { categoria: 'Consultas', valor: 3867.15 },
+  { categoria: 'medicamentos', valor: 2578.1 }
+];
+
+const DESPESAS = 2711.9;
+
 const Faturamento = () => {
   return (
     <React.Fragment>
@@ -27,7 +35,7 @@ const Faturamento = () => {
             ]}
           />
         }
-        content={<Totais />}
+        content={<Totais receitas={RECEITAS} despesas={DESPESAS} />}
       />
     </React.Fragment>
   );
