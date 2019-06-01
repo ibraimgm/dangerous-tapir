@@ -5,12 +5,18 @@ const Breadcrumb = props => {
   const { items } = props;
 
   return (
-    <div>
-      Breadcrumb:{' '}
-      {items.map((item, i) => (
-        <b key={i}>{item}&nbsp;</b>
-      ))}
-    </div>
+    <nav className="breadcrumb bc-nav">
+      <ol className="breadcrumb bc-list">
+        {items
+          .join('_|_')
+          .split('_')
+          .map((item, i) => (
+            <li key={i} className="breadcrumb-item bc-item">
+              {item}
+            </li>
+          ))}
+      </ol>
+    </nav>
   );
 };
 

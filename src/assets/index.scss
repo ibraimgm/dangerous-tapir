@@ -22,6 +22,7 @@
     width: 100%;
     background-color: #f5f7fa;
     padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -62,7 +63,6 @@
     text-transform: uppercase;
     color: #737689;
     opacity: 0.5;
-    padding-left: 1rem;
     margin-top: 1.5rem;
 
     &--active {
@@ -82,7 +82,6 @@
       text-align: center;
       text-transform: capitalize;
       opacity: 1;
-      padding-left: unset;
 
       > span {
         padding-left: unset;
@@ -94,5 +93,28 @@
     &--main#{&}--active {
       color: #fff;
     }
+  }
+}
+
+.bc-nav,
+.bc-list {
+  background-color: transparent;
+  font-family: 'Avenir';
+  font-size: 13px;
+  font-weight: bold;
+  color: #737689;
+  text-transform: uppercase;
+}
+
+.bc-nav {
+  border-bottom: 1px solid #dfe1e0;
+  border-radius: 0;
+}
+
+.bc-item {
+  margin-right: 1rem;
+
+  & + &::before {
+    content: '';
   }
 }
