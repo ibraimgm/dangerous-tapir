@@ -13,12 +13,15 @@
     "react-scripts": "3.0.1",
     "react-svgmt": "^1.1.8"
   },
+  "homepage": "http://ibraimgm.github.io/dangerous-tapir",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "lint": "eslint --ext js,jsx ./src",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -37,6 +40,7 @@
   },
   "devDependencies": {
     "eslint-plugin-import": "^2.17.3",
+    "gh-pages": "^2.0.1",
     "prettier": "^1.17.1"
   }
 }

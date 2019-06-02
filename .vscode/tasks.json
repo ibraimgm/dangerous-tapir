@@ -10,12 +10,18 @@
       "problemMatcher": []
     },
     {
-			"label": "Run ESLint",
-			"type": "npm",
-			"script": "lint",
-			"problemMatcher": [
-				"$eslint-stylish"
-			]
-		}
+      "label": "Run ESLint",
+      "type": "npm",
+      "script": "lint",
+      "problemMatcher": [
+        "$eslint-stylish"
+      ]
+    },
+    {
+      "label": "Deploy",
+      "type": "npm",
+      "script": "deploy",
+      "problemMatcher": []
+    }
   ]
 }
