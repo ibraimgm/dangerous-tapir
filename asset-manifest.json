@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/dangerous-tapir/static/css/main.979d6ed2.chunk.css",
+    "main.js": "/dangerous-tapir/static/js/main.997c308e.chunk.js",
+    "main.js.map": "/dangerous-tapir/static/js/main.997c308e.chunk.js.map",
+    "runtime~main.js": "/dangerous-tapir/static/js/runtime~main.fff5583b.js",
+    "runtime~main.js.map": "/dangerous-tapir/static/js/runtime~main.fff5583b.js.map",
+    "static/css/2.22a7d4ef.chunk.css": "/dangerous-tapir/static/css/2.22a7d4ef.chunk.css",
+    "static/js/2.2972c9bc.chunk.js": "/dangerous-tapir/static/js/2.2972c9bc.chunk.js",
+    "static/js/2.2972c9bc.chunk.js.map": "/dangerous-tapir/static/js/2.2972c9bc.chunk.js.map",
+    "index.html": "/dangerous-tapir/index.html",
+    "precache-manifest.26ae58156c6d0457d8664df9b1c6430d.js": "/dangerous-tapir/precache-manifest.26ae58156c6d0457d8664df9b1c6430d.js",
+    "service-worker.js": "/dangerous-tapir/service-worker.js",
+    "static/css/2.22a7d4ef.chunk.css.map": "/dangerous-tapir/static/css/2.22a7d4ef.chunk.css.map",
+    "static/css/main.979d6ed2.chunk.css.map": "/dangerous-tapir/static/css/main.979d6ed2.chunk.css.map",
+    "static/media/fonts.css": "/dangerous-tapir/static/media/DINCondensed-Bold.e9295de7.woff",
+    "static/media/ic_cadastro.svg": "/dangerous-tapir/static/media/ic_cadastro.db3349cc.svg",
+    "static/media/ic_clientes.svg": "/dangerous-tapir/static/media/ic_clientes.514fbbc2.svg",
+    "static/media/ic_dashboard.svg": "/dangerous-tapir/static/media/ic_dashboard.ff09e399.svg",
+    "static/media/ic_logo.svg": "/dangerous-tapir/static/media/ic_logo.00946399.svg",
+    "static/media/ic_menu.svg": "/dangerous-tapir/static/media/ic_menu.b77506d2.svg",
+    "static/media/ic_totais.svg": "/dangerous-tapir/static/media/ic_totais.82ced422.svg"
+  }
+}
