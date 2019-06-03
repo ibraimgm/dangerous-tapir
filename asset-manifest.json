@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/dangerous-tapir/static/css/main.e545a94e.chunk.css",
-    "main.js": "/dangerous-tapir/static/js/main.c3c4e3a3.chunk.js",
-    "main.js.map": "/dangerous-tapir/static/js/main.c3c4e3a3.chunk.js.map",
+    "main.js": "/dangerous-tapir/static/js/main.8d94d7a1.chunk.js",
+    "main.js.map": "/dangerous-tapir/static/js/main.8d94d7a1.chunk.js.map",
     "runtime~main.js": "/dangerous-tapir/static/js/runtime~main.fff5583b.js",
     "runtime~main.js.map": "/dangerous-tapir/static/js/runtime~main.fff5583b.js.map",
     "static/css/2.22a7d4ef.chunk.css": "/dangerous-tapir/static/css/2.22a7d4ef.chunk.css",
     "static/js/2.2972c9bc.chunk.js": "/dangerous-tapir/static/js/2.2972c9bc.chunk.js",
     "static/js/2.2972c9bc.chunk.js.map": "/dangerous-tapir/static/js/2.2972c9bc.chunk.js.map",
     "index.html": "/dangerous-tapir/index.html",
-    "precache-manifest.61e453cb359b2dacb2953bf64e561bac.js": "/dangerous-tapir/precache-manifest.61e453cb359b2dacb2953bf64e561bac.js",
+    "precache-manifest.2ff277eb4ef40e0b07dfb1994fcf1f3d.js": "/dangerous-tapir/precache-manifest.2ff277eb4ef40e0b07dfb1994fcf1f3d.js",
     "service-worker.js": "/dangerous-tapir/service-worker.js",
     "static/css/2.22a7d4ef.chunk.css.map": "/dangerous-tapir/static/css/2.22a7d4ef.chunk.css.map",
     "static/css/main.e545a94e.chunk.css.map": "/dangerous-tapir/static/css/main.e545a94e.chunk.css.map",
