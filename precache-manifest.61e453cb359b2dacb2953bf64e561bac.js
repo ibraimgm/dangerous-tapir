@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "81a34577735f3d5a9f3d5c290eceeafc",
+    "revision": "3675dab5061901f3997d8262d4379c97",
     "url": "/dangerous-tapir/index.html"
   },
   {
@@ -8,16 +8,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dangerous-tapir/static/css/2.22a7d4ef.chunk.css"
   },
   {
-    "revision": "cdb301d6e972aec05093",
-    "url": "/dangerous-tapir/static/css/main.2025f3b0.chunk.css"
+    "revision": "918d6ff54568584330f4",
+    "url": "/dangerous-tapir/static/css/main.e545a94e.chunk.css"
   },
   {
     "revision": "e019491ccac755f8ce2e",
     "url": "/dangerous-tapir/static/js/2.2972c9bc.chunk.js"
   },
   {
-    "revision": "cdb301d6e972aec05093",
-    "url": "/dangerous-tapir/static/js/main.1ab014fa.chunk.js"
+    "revision": "918d6ff54568584330f4",
+    "url": "/dangerous-tapir/static/js/main.c3c4e3a3.chunk.js"
   },
   {
     "revision": "adf51dbcc5e929262cfc",
