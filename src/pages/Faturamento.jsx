@@ -36,7 +36,7 @@ const Faturamento = () => {
   return (
     <React.Fragment>
       <Filter
-        className="pl-4 pl-lg-5"
+        className="pl-2 pl-lg-5"
         items={[
           { name: 'Hoje', active: true },
           'Última semana',
@@ -45,12 +45,12 @@ const Faturamento = () => {
         ]}
       />
       <Menu
-        className="pl-4 pl-lg-5 d-block d-lg-none"
+        className="pl-2 pl-lg-5 d-block d-lg-none"
         itemClass="d-inline-block menu__item--inline"
         items={items}
       />
       <ContentArea
-        className="pl-4 pl-lg-5"
+        className="pl-2 pl-lg-5"
         menu={<Menu className="d-none d-lg-block" items={items} />}
         content={<Totais receitas={RECEITAS} despesas={DESPESAS} />}
       />

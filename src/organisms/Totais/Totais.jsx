@@ -41,14 +41,14 @@ const Totais = props => {
   return (
     <div className="container">
       <div className="row">
-        <div className="col spotlight">
+        <div className="col pl-0 pl-md-3 spotlight">
           <span className="title">Valor total</span>
           <span className="spotlight__currency">R$</span>
           <span className="spotlight__amount">10.178,60</span>
         </div>
       </div>
       <div className="row">
-        <div className="col col-xl-6 graph">
+        <div className="col col-xl-6 pl-lg-5 pr-lg-5 graph">
           <span className="title">Serviços</span>
           <div className="graph__container graph__container--circle">
             <GraphServicos data={servicosData} />
@@ -60,7 +60,7 @@ const Totais = props => {
             value={`${moneyFormat(totalReceitas)} (100%)`}
           />
         </div>
-        <div className="col col-xl-6 graph">
+        <div className="col col-xl-6 pl-lg-5 pr-lg-5 graph">
           <span className="title">Despesas x Receitas</span>
           <div className="graph__container graph__container--bar">
             <GraphReceitasDespesas
