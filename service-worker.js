@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/dangerous-tapir/precache-manifest.09079ec65c7b9d9ca5769d563f11004a.js"
+  "/dangerous-tapir/precache-manifest.2ff277eb4ef40e0b07dfb1994fcf1f3d.js"
 );
 
 self.addEventListener('message', (event) => {
